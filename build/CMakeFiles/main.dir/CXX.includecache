@@ -9,4 +9,14 @@
 /home/kacper/Pulpit/Data base/Data-base/main.cpp
 iostream
 -
+stdio.h
+-
+stdlib.h
+-
+vector
+-
+memory
+-
+array
+-
 
