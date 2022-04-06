@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+/home/kacper/Pulpit/Data base/Data-base/DataBase.hpp
+iostream
+-
+array
+-
+exception
+-
+stdio.h
+-
+stdlib.h
+-
+IDataBase.hpp
+/home/kacper/Pulpit/Data base/Data-base/IDataBase.hpp
+User.hpp
+/home/kacper/Pulpit/Data base/Data-base/User.hpp
+
+/home/kacper/Pulpit/Data base/Data-base/IDataBase.hpp
+iostream
+-
+
 /home/kacper/Pulpit/Data base/Data-base/User.hpp
 iostream
 -
@@ -15,14 +35,6 @@ array
 /home/kacper/Pulpit/Data base/Data-base/main.cpp
 iostream
 -
-stdio.h
--
-stdlib.h
--
-array
--
-exception
--
-User.hpp
-/home/kacper/Pulpit/Data base/Data-base/User.hpp
+DataBase.hpp
+/home/kacper/Pulpit/Data base/Data-base/DataBase.hpp
 
