@@ -2,18 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <array>
-
+#include <exception>
+#include "User.hpp"
 
 void pressEnter();
-struct User{
-    std::string name;
-    std::string surname;
-    short age{};
-    std::string phone_number;
-};
-
-short howManyUsersAdded{0};
-std::array<User, 100> users;
 
 void addUser(){
 
@@ -38,7 +30,11 @@ void addUser(){
 }
 
 void printUser(){
-    if(howManyUsersAdded > 0){
+    if(howManyUsersAdded < 0){
+        throw std::invalid_argument("Data base is empty\n\n");
+        exit(0);
+    }
+    else{
         for(auto i = 0; i < howManyUsersAdded; i++){
             std::cout << "User nr: " << i + 1 << std::endl;
             std::cout << "Name: " << users[i].name << std::endl;
@@ -47,10 +43,6 @@ void printUser(){
             std::cout << "Phone number: " << users[i].phone_number << std::endl;
             
         }
-        pressEnter();
-    }
-    else{
-        std::cout << "Data base is empty\n";
         pressEnter();
     }
 }
@@ -79,7 +71,12 @@ int main(){
             break;
         
         case '2':
-            printUser();
+            try{
+                printUser();
+            }catch(std::invalid_argument& e){
+                std::cerr << e.what() << std::endl;
+            }
+
             break;
         }
 
