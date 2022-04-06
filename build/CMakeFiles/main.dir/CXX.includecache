@@ -13,10 +13,6 @@ stdio.h
 -
 stdlib.h
 -
-vector
--
-memory
--
 array
 -
 

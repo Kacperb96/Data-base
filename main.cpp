@@ -1,10 +1,10 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
-#include <vector>
-#include <memory>
 #include <array>
 
+
+void pressEnter();
 struct User{
     std::string name;
     std::string surname;
@@ -24,7 +24,7 @@ void addUser(){
 
     std::cout << "Type name: ";
     std::cin >> users[howManyUsersAdded].name;
-    
+
     std::cout << "Type second name: ";
     std::cin >> users[howManyUsersAdded].surname;
 
@@ -37,11 +37,28 @@ void addUser(){
     howManyUsersAdded++;
 }
 
+void printUser(){
+    if(howManyUsersAdded > 0){
+        for(auto i = 0; i < howManyUsersAdded; i++){
+            std::cout << "User nr: " << i + 1 << std::endl;
+            std::cout << "Name: " << users[i].name << std::endl;
+            std::cout << "Surname: " << users[i].surname << std::endl;
+            std::cout << "Age: " << users[i].age << std::endl;
+            std::cout << "Phone number: " << users[i].phone_number << std::endl;
+            
+        }
+        pressEnter();
+    }
+    else{
+        std::cout << "Data base is empty\n";
+        pressEnter();
+    }
+}
+
 void pressEnter(){
-    char temp = 'x';
-    std::cout << "Press ENTER to continue..." << std::endl;
-    while (temp != '\n')
-        std::cin.get(temp);
+    do{
+        std::cout << "Press ENTER to continue..." << std::endl << std::endl;
+    }while(std::cin.get() != '\n');
 }
 
 int main(){
@@ -54,7 +71,7 @@ int main(){
         std::cout << "Users in data basse: " << howManyUsersAdded << std::endl;
 
         test = std::cin.get();
-
+        
         switch (test)
         {
         case '1':
@@ -62,7 +79,7 @@ int main(){
             break;
         
         case '2':
-
+            printUser();
             break;
         }
 
