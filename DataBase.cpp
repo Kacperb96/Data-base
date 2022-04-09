@@ -1,6 +1,6 @@
 #include "DataBase.hpp"
 
-void DataBase::pressEnter(){
+void DataBase::pressEnter() {
     do{
         std::cout << "Press ENTER to continue..." << std::endl << std::endl;
     }while(std::cin.get() != '\n');

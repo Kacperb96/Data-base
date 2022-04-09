@@ -4,7 +4,7 @@
 class MainMenu{
     public:
         MainMenu(DataBase db):db{db}{}
-        void run(){}
+        void run();
 
     private:
         DataBase& db;

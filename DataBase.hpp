@@ -9,9 +9,9 @@
 
 class DataBase : public IDataBase{
     public:
-        void pressEnter() override{}
-        void addUser() override{}
-        void printUser() override{}
+        void pressEnter() override;
+        void addUser() override;
+        void printUser() override;
         
         int usersAdded();
         ~DataBase() = default;
