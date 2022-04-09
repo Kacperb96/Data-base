@@ -26,6 +26,10 @@ User.hpp
 iostream
 -
 
+/home/kacper/Pulpit/Data base/Data-base/MainMenu.hpp
+DataBase.hpp
+/home/kacper/Pulpit/Data base/Data-base/DataBase.hpp
+
 /home/kacper/Pulpit/Data base/Data-base/User.hpp
 iostream
 -
@@ -33,8 +37,6 @@ array
 -
 
 /home/kacper/Pulpit/Data base/Data-base/main.cpp
-iostream
--
-DataBase.hpp
-/home/kacper/Pulpit/Data base/Data-base/DataBase.hpp
+MainMenu.hpp
+/home/kacper/Pulpit/Data base/Data-base/MainMenu.hpp
 

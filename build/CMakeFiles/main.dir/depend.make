@@ -3,6 +3,7 @@
 
 CMakeFiles/main.dir/main.cpp.o: ../DataBase.hpp
 CMakeFiles/main.dir/main.cpp.o: ../IDataBase.hpp
+CMakeFiles/main.dir/main.cpp.o: ../MainMenu.hpp
 CMakeFiles/main.dir/main.cpp.o: ../User.hpp
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
 
