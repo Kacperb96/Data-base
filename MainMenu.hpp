@@ -1,3 +1,4 @@
+#pragma once
 #include "DataBase.hpp"
 
 class MainMenu{
