@@ -1,10 +1,7 @@
-#include "MainMenu.hpp"
+#include <iostream>
 
 int main(){
-    DataBase db;
-
-    MainMenu menu(db);
-    menu.run();
+    std::cout << "Hello from main\n";
 
     return 0;
 }
