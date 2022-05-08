@@ -9,4 +9,8 @@
 /home/kacper/Pulpit/Data base/Data-base/main.cpp
 iostream
 -
+fstream
+-
+cstdlib
+-
 
